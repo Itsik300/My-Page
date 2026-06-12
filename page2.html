@@ -29,9 +29,6 @@ h1{font-family:'Unbounded',sans-serif;font-size:clamp(1.2rem,3vw,1.7rem);font-we
 .btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .player{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:14px}
 video{width:100%;border-radius:10px;display:block;background:#000}
-footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--text-dim);font-size:.82rem}
-footer a{color:var(--accent);text-decoration:none}
-footer a:hover{text-decoration:underline}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -46,16 +43,11 @@ footer a:hover{text-decoration:underline}
   </header>
 
   <div class="player">
-    <video controls preload="metadata">
+    <video autoplay muted loop playsinline preload="auto">
       <source src="intro-video-no-watermark.mp4" type="video/mp4">
       Ваш браузер не поддерживает HTML5-видео.
     </video>
   </div>
-
-  <footer>
-    <span>© 2026 · Личная стартовая панель</span>
-    <a href="index.html">На главную →</a>
-  </footer>
 </div>
 <script>
 const root=document.documentElement,btn=document.getElementById('themeBtn');
