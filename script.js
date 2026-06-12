@@ -82,15 +82,11 @@ function normalizeUrl(u){
 }
 function favicon(url){
   try{
-    const host=new URL(normalizeUrl(url)).hostname;
-    if(host==="notebooklm.google.com"||host.endsWith(".notebooklm.google.com")){
-      return NOTEBOOKLM_ICON;
-    }
-    return "https://www.google.com/s2/favicons?domain="+encodeURIComponent(host)+"&sz=64";
+    const normalized=normalizeUrl(url);
+    return "https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(normalized)+"&sz=64";
   }catch(e){return "";}
 }
 // запасная иконка-глобус, если фавиконка не загрузилась
-const NOTEBOOKLM_ICON="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#ffffff"/><path fill="#4285f4" d="M14 16h24a8 8 0 0 1 8 8v24H22a8 8 0 0 1-8-8z"/><path fill="#34a853" d="M22 24h28v24H22z"/><path fill="#fbbc04" d="M22 24h24v8H22z"/><path fill="#ea4335" d="M22 40h24v8H22z"/><path fill="#fff" d="M24 28h15v4H24zm0 9h18v4H24z"/></svg>');
 const FALLBACK="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%239AA3C0" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>');
 
 /* ---------- Пользовательские сайты (localStorage) ---------- */
