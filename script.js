@@ -45,13 +45,15 @@ const DATA=[
     {n:"Copilot",         u:"https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx/"},
     {n:"Andi",            u:"https://andisearch.com/"},
     {n:"ВсегоGPT",        u:"https://overallgpt.com/"},
-    {n:"HuggingChat",     u:"https://huggingface.co/chat/"},
     {n:"DeepSeek",        u:"https://chat.deepseek.com/"},
     {n:"Grok",            u:"https://x.com/i/grok/"},
     {n:"GitHub Copilot",  u:"https://github.com/copilot"},
     {n:"Qwen Chat",       u:"https://chat.qwenlm.ai/"},
     {n:"Kimi AI",         u:"https://kimi.ai/chat/empty/"},
-    {n:"Arena AI",        u:"https://arena.ai/text/direct"}
+    {n:"Arena AI",        u:"https://arena.ai/text/direct"},
+    {n:"HuggingChat",     u:"https://huggingface.co/chat/"},
+    {n:"Inception Chat",  u:"https://chat.inceptionlabs.ai/"},
+    {n:"Together AI Chat",u:"https://chat.together.ai/"}
   ]},
   {id:"img", title:"Изображения и генерация", color:"--c-img", links:[
     {n:"Shakker AI",          u:"https://www.shakker.ai/aigenerator"},
