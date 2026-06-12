@@ -54,7 +54,7 @@ const DATA=[
     {n:"HuggingChat",     u:"https://huggingface.co/chat/"},
     {n:"Inception Chat",  u:"https://chat.inceptionlabs.ai/"},
     {n:"Together AI Chat",u:"https://chat.together.ai/"},
-    {n:"NotebookLM",      u:"https://notebooklm.google.com/?authuser=1"}
+    {n:"NotebookLM",      u:"https://notebooklm.google.com/?authuser=1"},
     {n:"Z.aiChat",        u:"https://chat.z.ai/"}
   ]},
   {id:"img", title:"Изображения и генерация", color:"--c-img", links:[
