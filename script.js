@@ -83,6 +83,12 @@ function normalizeUrl(u){
   if(!/^https?:\/\//i.test(u)) u="https://"+u;
   return u;
 }
+function linkKey(link){
+  return normalizeUrl(link.u).replace(/\/+$/,'').toLowerCase();
+}
+function nameKey(link){
+  return link.n.trim().toLowerCase();
+}
 function favicon(url){
   try{
     const normalized=normalizeUrl(url);
@@ -152,8 +158,13 @@ function render(){
 
     const grid=document.createElement('div');
     grid.className='grid';
+    const builtInUrls=new Set(cat.links.map(linkKey));
+    const builtInNames=new Set(cat.links.map(nameKey));
     cat.links.forEach(l=>grid.append(makeTile(l,cat.color,false)));
-    (custom[cat.id]||[]).forEach((l,i)=>grid.append(makeTile(l,cat.color,true,cat.id,i)));
+    (custom[cat.id]||[]).forEach((l,i)=>{
+      if(builtInUrls.has(linkKey(l))||builtInNames.has(nameKey(l))) return;
+      grid.append(makeTile(l,cat.color,true,cat.id,i));
+    });
 
     sec.append(head,grid);
     main.append(sec);
