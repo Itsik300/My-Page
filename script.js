@@ -53,7 +53,8 @@ const DATA=[
     {n:"Arena AI",        u:"https://arena.ai/text/direct"},
     {n:"HuggingChat",     u:"https://huggingface.co/chat/"},
     {n:"Inception Chat",  u:"https://chat.inceptionlabs.ai/"},
-    {n:"Together AI Chat",u:"https://chat.together.ai/"}
+    {n:"Together AI Chat",u:"https://chat.together.ai/"},
+    {n:"NotebookLM",      u:"https://notebooklm.google.com/?authuser=1"}
   ]},
   {id:"img", title:"Изображения и генерация", color:"--c-img", links:[
     {n:"Shakker AI",          u:"https://www.shakker.ai/aigenerator"},
