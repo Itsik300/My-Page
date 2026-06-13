@@ -14,7 +14,6 @@ const DATA=[
     {n:"Discord",        u:"https://discord.com/channels/1007000829741506630/1007000829741506633"},
     {n:"TikTok",         u:"https://www.tiktok.com/explore"},
     {n:"Reddit",         u:"https://www.reddit.com/"},
-    {n:"GitHub",         u:"https://github.com/"},
     {n:"Pinterest",      u:"https://ru.pinterest.com/"}
   ]},
   {id:"news", title:"Новости и полезное", color:"--c-news", links:[
