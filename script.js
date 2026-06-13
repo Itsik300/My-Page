@@ -65,6 +65,7 @@ const DATA=[
     {n:"Krea",                u:"https://www.krea.ai/apps/image/flux"},
     {n:"Ideogram",            u:"https://ideogram.ai/t/explore"},
     {n:"Reve",                u:"https://app.reve.com/home"},
+    {n:"Design Arena",        u:"https://www.designarena.ai/"},
     {n:"ГенерКартинок",       u:"https://app.nichetensor.com/?feature=textToImage"},
     {n:"FLUX.1-pro",          u:"https://glif.app/@001/glifs/clzgvha5a00041aepvz2h4zi4"},
     {n:"FLUX.1-schnell",      u:"https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell"},
