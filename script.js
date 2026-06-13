@@ -14,6 +14,7 @@ const DATA=[
     {n:"Discord",        u:"https://discord.com/channels/1007000829741506630/1007000829741506633"},
     {n:"TikTok",         u:"https://www.tiktok.com/explore"},
     {n:"Reddit",         u:"https://www.reddit.com/"},
+    {n:"GitHub",         u:"https://github.com/"},
     {n:"Pinterest",      u:"https://ru.pinterest.com/"}
   ]},
   {id:"news", title:"Новости и полезное", color:"--c-news", links:[
@@ -248,6 +249,7 @@ engines.forEach(b=>{
 });
 let engineUrl=engines[0].dataset.url;
 const q=document.getElementById('q');
+const searchBtn=document.getElementById('searchBtn');
 engines.forEach(b=>b.addEventListener('click',()=>{
   engines.forEach(x=>x.setAttribute('aria-pressed','false'));
   b.setAttribute('aria-pressed','true');
@@ -257,6 +259,11 @@ engines.forEach(b=>b.addEventListener('click',()=>{
 
 /* ---------- Поиск + живой фильтр ---------- */
 const nores=document.getElementById('noresults');
+function runSearch(){
+  const value=q.value.trim();
+  if(!value){q.focus();return;}
+  window.open(engineUrl+encodeURIComponent(value),'_blank','noopener');
+}
 function filter(){
   const v=q.value.trim().toLowerCase();
   let any=false;
@@ -275,10 +282,12 @@ function filter(){
 q.addEventListener('input',filter);
 q.addEventListener('keydown',e=>{
   if(e.key==='Enter'&&q.value.trim()){
-    window.open(engineUrl+encodeURIComponent(q.value.trim()),'_blank');
+    e.preventDefault();
+    runSearch();
   }
   if(e.key==='Escape'){q.value='';filter();q.blur();}
 });
+searchBtn.addEventListener('click',runSearch);
 document.addEventListener('keydown',e=>{
   if(e.key==='/'&&document.activeElement!==q&&!dlg.open){e.preventDefault();q.focus();}
 });

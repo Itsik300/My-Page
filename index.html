@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20260613-search">
 </head>
 <body>
 <div class="wrap">
@@ -38,10 +38,11 @@
     <div class="inputrow">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="text" autocomplete="off" placeholder="Искать в интернете или фильтровать ссылки…" aria-label="Поиск">
+      <button class="searchbtn" id="searchBtn" type="button">Искать</button>
       <kbd>/</kbd>
     </div>
   </div>
-  <p class="hint">Начните печатать — плитки ниже <b>отфильтруются</b>. <b>Enter</b> — искать в выбранной системе. <b>Esc</b> — очистить. Кнопка <b>«+ Добавить»</b> в категории — новый сайт, иконка подтянется сама.</p>
+  <p class="hint">Начните печатать — плитки ниже <b>отфильтруются</b>. <b>Enter</b> или <b>Искать</b> — поиск в выбранной системе. <b>Esc</b> — очистить. Кнопка <b>«+ Добавить»</b> в категории — новый сайт, иконка подтянется сама.</p>
 </div>
 
 <main id="links"></main>
@@ -69,6 +70,6 @@
   </div>
 </dialog>
 
-<script src="script.js?v=20260612-ideogram"></script>
+<script src="script.js?v=20260613-search"></script>
 </body>
 </html>

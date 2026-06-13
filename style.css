@@ -98,6 +98,20 @@ kbd{
   border:1px solid var(--line);border-radius:6px;padding:2px 7px;background:var(--surface-2);
   white-space:nowrap;
 }
+.searchbtn{
+  flex:none;
+  border:1px solid var(--accent);
+  background:var(--accent);
+  color:var(--accent-ink);
+  border-radius:8px;
+  padding:8px 13px;
+  font:700 .82rem 'Manrope';
+  cursor:pointer;
+  white-space:nowrap;
+  transition:transform .15s,filter .15s;
+}
+.searchbtn:hover{transform:translateY(-1px);filter:saturate(1.1)}
+.searchbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .hint{margin-top:10px;font-size:.8rem;color:var(--text-dim)}
 .hint b{color:var(--text);font-weight:600}
 
@@ -176,6 +190,7 @@ footer a:hover{text-decoration:underline}
 @media (max-width:560px){
   .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
   .inputrow kbd{display:none}
+  .searchbtn{padding:8px 10px;font-size:.78rem}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{transition:none!important;animation:none!important}
