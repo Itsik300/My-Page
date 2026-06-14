@@ -42,7 +42,7 @@ const DATA=[
     {n:"Perplexity",      u:"https://www.perplexity.ai/"},
     {n:"Poe",             u:"https://poe.com/"},
     {n:"Нейро (Яндекс)",  u:"https://ya.ru/?npr=1&utm_referrer=https%3A%2F%2Fyandex.ru%2F&neuro=1"},
-    {n:"Copilot",         u:"https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx/"},
+    {n:"Copilot",         u:"https://copilot.microsoft.com/"},
     {n:"Andi",            u:"https://andisearch.com/"},
     {n:"ВсегоGPT",        u:"https://overallgpt.com/"},
     {n:"DeepSeek",        u:"https://chat.deepseek.com/"},
