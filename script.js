@@ -41,6 +41,7 @@ const DATA=[
     {n:"Mistral AI",      u:"https://chat.mistral.ai/chat"},
     {n:"Perplexity",      u:"https://www.perplexity.ai/"},
     {n:"Poe",             u:"https://poe.com/"},
+    {n:"Meta AI",         u:"https://www.meta.ai/"},
     {n:"Нейро (Яндекс)",  u:"https://ya.ru/?npr=1&utm_referrer=https%3A%2F%2Fyandex.ru%2F&neuro=1"},
     {n:"Copilot",         u:"https://copilot.microsoft.com/"},
     {n:"Andi",            u:"https://andisearch.com/"},
