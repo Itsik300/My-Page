@@ -17,6 +17,7 @@ const DATA=[
     {n:"Pinterest",      u:"https://ru.pinterest.com/"}
   ]},
   {id:"news", title:"Новости и полезное", color:"--c-news", links:[
+    {n:"Google Новости",   u:"https://news.google.com/home?hl=ru&gl=RU&ceid=RU%3Aru"},
     {n:"StartPage",        u:"https://news.startpage.co.il/russian/"},
     {n:"Я Плакалъ",        u:"https://www.yaplakal.com/"},
     {n:"Хабр",             u:"https://habr.com/ru/articles/"},
