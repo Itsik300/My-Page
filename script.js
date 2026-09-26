@@ -29,7 +29,6 @@ const DATA=[
     {n:"Переводчик",       u:"https://translate.google.com/?hl=ru&sl=ru&tl=en&op=translate"},
     {n:"Translit",         u:"https://translit.ru/"},
     {n:"FMHY",             u:"https://fmhy.net/"}
-    {n:"Google Новости",   u:"https://news.google.com/home?hl=ru&gl=RU&ceid=RU%3Aru/"}
   ]},
   {id:"ai", title:"ИИ-чаты и ассистенты", color:"--c-ai", links:[
     {n:"Claude",          u:"https://claude.ai/new"},
