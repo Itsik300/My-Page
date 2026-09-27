@@ -34,6 +34,7 @@ const DATA=[
   {id:"ai", title:"ИИ-чаты и ассистенты", color:"--c-ai", links:[
     {n:"Claude",          u:"https://claude.ai/new"},
     {n:"ChatGPT",         u:"https://chat.openai.com/"},
+    {n:"Google Labs",     u:"https://labs.google/"},
     {n:"Gemini",          u:"https://gemini.google.com/u/1/app?hl=ru"},
     {n:"Google AI Studio",u:"https://aistudio.google.com/"},
     {n:"Playground",      u:"https://platform.openai.com/playground"},
