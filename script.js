@@ -103,6 +103,9 @@ function favicon(url){
   try{
     const normalized=normalizeUrl(url);
     const host=new URL(normalized).hostname;
+    if(host==="aistudio.xiaomimimo.com"){
+      return "https://aistudio.xiaomimimo.com/favicon.png";
+    }
     if(host==="notebooklm.google.com"||host.endsWith(".notebooklm.google.com")){
       return NOTEBOOKLM_ICON;
     }
