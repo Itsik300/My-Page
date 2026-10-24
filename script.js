@@ -60,7 +60,8 @@ const DATA=[
     {n:"Together AI Chat",u:"https://chat.together.ai/"},
     {n:"NotebookLM",      u:"https://notebooklm.google.com/?authuser=1"},
     {n:"Z.aiChat",        u:"https://chat.z.ai/"},
-    {n:"Woozlit",         u:"https://www.woozlit.com/"}
+    {n:"Woozlit",         u:"https://www.woozlit.com/"},
+    {n:"Xiaomi MiMo",     u:"https://aistudio.xiaomimimo.com/#/c"}
   ]},
   {id:"img", title:"Изображения и генерация", color:"--c-img", links:[
     {n:"Shakker AI",          u:"https://www.shakker.ai/aigenerator"},
